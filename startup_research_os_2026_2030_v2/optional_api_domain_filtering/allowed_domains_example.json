@@ -1,0 +1,26 @@
+{
+  "tools": [
+    {
+      "type": "web_search_20260318",
+      "name": "web_search",
+      "max_uses": 20,
+      "allowed_domains": [
+        "ieeexplore.ieee.org",
+        "spectrum.ieee.org",
+        "energy.gov",
+        "arpa-e.energy.gov",
+        "iea.org",
+        "nist.gov",
+        "chips.gov",
+        "bis.gov",
+        "semi.org",
+        "semiconductors.org",
+        "fda.gov",
+        "nih.gov",
+        "nmpa.gov.cn",
+        "miit.gov.cn",
+        "ndrc.gov.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Execute the attached prompt exactly. Use the Project knowledge files when referenced. Use Research and Web Search if the prompt requires them. Do not merely summarize the prompt; perform the task.

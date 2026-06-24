@@ -1,0 +1,18 @@
+# Source Corpus Summaries
+
+Store batch-level Markdown summaries here after each 300-source corpus batch.
+
+Suggested filenames:
+
+```text
+batch_01_china_policy_summary.md
+batch_02_us_policy_export_summary.md
+batch_03_energy_power_grid_datacenters_summary.md
+batch_04_semiconductors_electronics_summary.md
+batch_05_ai_robotics_automation_summary.md
+batch_06_biomedical_medtech_summary.md
+batch_07_extreme_advanced_manufacturing_summary.md
+batch_08_customer_market_procurement_summary.md
+batch_09_dedupe_gap_audit.md
+batch_10_300_source_strategy_synthesis.md
+```
