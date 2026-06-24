@@ -1,4 +1,5 @@
 batch_id,batch_name,target_qualifying_sources,qualifying_sources_logged,tier1_count,tier2_count,tier3_count,tier4_count_not_counted,duplicate_count_removed,status,date_completed,notes
 BATCH_01_CHINA_POLICY,"China policy, industrial strategy, standards, regulation",40,50,24,17,9,2,16,complete,2026-06-24,"Tier1+2 = 41/50 = 82pct, clears 75pct gate; gaps: SSE/STAR & SZSE filings, CAEA primary nuclear release, province-level 15FYP implementation; several Chinese-language primaries cited via official English mirrors/translations with lowered confidence"
 BATCH_02_US_POLICY_EXPORT,US Policy Funding Export Controls Standards Regulation,40,45,33,10,2,8,6,complete,2026-06-24,Tier1+Tier2 = 43/45 (95.6%); Tier 3 limited to Natcast facility triangulation (US-013) and outbound-investment transaction detail (US-015)
+BATCH_03_ENERGY_POWER_GRID_DATACENTERS,Energy/Power/Grid/Data Centers/Climate Infrastructure,45,50,40,2,8,6,3,complete,2026-06-24,~84% Tier1/2 passes 75% gate; 55 rows summarized (5 overflow for dedupe margin); China energy cross-referenced to CN-025..CN-036 not re-logged; running total 145/300
 
