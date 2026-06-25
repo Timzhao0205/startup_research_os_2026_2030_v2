@@ -32,19 +32,19 @@ rank,idea_id,idea_name,old_score,new_score,score_delta,old_decision,new_decision
 -,RID-112,Navigation-grade MEMS IMU,69,69,0,W,W,HOLD,no,Held at regulatory-speculation; broad-market potential to revisit independently of Part 108,ISSUE-010
 -,RID-087,Point-of-care molecular cartridge,47,47,0,K,K,NEEDS_MORE_SOURCE,no,Policy-context-only (China Document 551); no buyer pain,ISSUE-015
 -,RID-091,China-localized imaging detector,46,46,0,K,K,NEEDS_MORE_SOURCE,no,Policy-context-only; geography=China; no buyer pain,ISSUE-015
--,RID-111,High-bandwidth piezo actuator,72,72,0,P,P,HOLD,no,Placeholder; no direct Tier1/2 source,ISSUE-014
--,RID-016,Second-life battery repurposing,71,71,0,P,P,HOLD,no,Placeholder; no direct Tier1/2 source,ISSUE-014
--,RID-100,Automated optical-assembly cell,70,70,0,P,P,HOLD,no,Placeholder; no direct Tier1/2 source,ISSUE-014
--,RID-015,Thermal-storage module (700C),68,68,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-026,Hybrid-plant controller,68,68,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-020,Battery thermal-runaway suppression,67,67,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-040,Datacenter waste-heat recovery,67,67,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-017,Sodium-ion grid module,65,65,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-032,EV-fleet bidirectional charger,63,63,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-012,Behind-the-meter firm-power interface,63,63,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-022,Microgrid DC-coupling hub,61,61,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-097,Laser micro-machining cell,56,56,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-082,Implantable neurostimulator power,55,55,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-101,Molten-salt-resistant alloy,55,55,0,W,W,HOLD,no,Placeholder,ISSUE-014
--,RID-094,AM in-situ NDE,50,50,0,K,K,HOLD,no,Placeholder + prior kill; no direct source,ISSUE-014
--,RID-099,Extreme-precision metrology instrument,49,49,0,W,W,HOLD,no,Placeholder,ISSUE-014
+-,RID-111,High-bandwidth piezo actuator,72,72,0,P,P,CLEARED,yes,07c: PH-001 nanopositioning nm/kHz tradeoff + hybrid-bonding 0.2um placement; cleared,ISSUE-014-111
+-,RID-016,Second-life battery repurposing,71,71,0,P,P,CLEARED,yes,07c: PH-002 MIIT echelon-utilization + UL 1974 + NREL; cleared,ISSUE-014-016
+-,RID-100,Automated optical-assembly cell,70,70,0,P,P,CLEARED,yes,07c: PH-003 peer-reviewed active-alignment packaging bottleneck; cleared,ISSUE-014-100
+-,RID-015,Thermal-storage module (700C),68,68,0,W,W,CLEARED,yes,07c: PH-004 Sandia/DOE G3P3 >700C 6h storage; cleared,ISSUE-014-015
+-,RID-026,Hybrid-plant controller,68,68,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-005 NREL UNIFI + FERC Order 2023; cleared-with-weakness (borders software/consulting; verify HW at 02e),ISSUE-014-026
+-,RID-020,Battery thermal-runaway suppression,67,67,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-006 UL 9540A + NFPA 855 2026 TRPP; cleared-with-weakness (commoditized/test-driven),ISSUE-014-020
+-,RID-040,Datacenter waste-heat recovery,67,67,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-007 EU EED + German EnEfG final law; cleared-with-weakness (EU/Germany geography limit),ISSUE-014-040
+-,RID-017,Sodium-ion grid module,65,65,0,W,W,CLEARED,yes,07c: PH-008 GB/T 44265-2024 + PNNL/DOE; cleared,ISSUE-014-017
+-,RID-032,EV-fleet bidirectional charger,63,63,0,W,W,CLEARED,yes,07c: PH-009 ISO 15118-20 + EVS38 V2G demo; cleared,ISSUE-014-032
+-,RID-012,Behind-the-meter firm-power interface,63,63,0,W,W,CLEARED,yes,07c: PH-010 IEA 2026/2025 onsite-power + LBNL queue scarcity; cleared,ISSUE-014-012
+-,RID-022,Microgrid DC-coupling hub,61,61,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-011 IEEE 2030.10 + DOE OE; cleared-with-weakness (diffuse/narrow scope),ISSUE-014-022
+-,RID-097,Laser micro-machining cell,56,56,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-012 peer-reviewed TGV laser micromachining; cleared-with-weakness (generic application),ISSUE-014-097
+-,RID-082,Implantable neurostimulator power,55,55,0,W,W,CLEARED,yes,07c: PH-013 neural-implant power/longevity review; cleared,ISSUE-014-082
+-,RID-101,Molten-salt-resistant alloy,55,55,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-014 JOM/ORNL molten-salt corrosion; cleared-with-weakness (timeline likely past 2030),ISSUE-014-101
+-,RID-094,AM in-situ NDE,50,50,0,K,K,HOLD,no,"07c: NIST AM-Bench Tier1 exists but prior-kill + monitoring-overproduction; HOLD, no standalone procurement/standards driver",ISSUE-014-094
+-,RID-099,Extreme-precision metrology instrument,49,49,0,W,W,CLEARED_WITH_WEAKNESS,yes,"07c: PH-015 Nature Electronics + NIST overlay (sub-1nm); cleared-with-weakness (monitoring-adjacent, re-test at 02e)",ISSUE-014-099
