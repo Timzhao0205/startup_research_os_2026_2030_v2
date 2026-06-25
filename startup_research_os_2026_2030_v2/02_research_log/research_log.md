@@ -85,3 +85,30 @@ Open questions:
   - Top-up needed for HVDC primaries, immersion-cooling standard, and 2 NREL industrial-heat rows before any data-center power/cooling idea-gating
   - Reconcile IEA 945 vs 950 TWh 2030 figure and EIA 15 GW actual vs 18.2 GW forecast in later verification pass
 Next action: Run prompts/01_source_corpus_300/04_batch_semiconductors_electronics_45.md (Batch 04, target 45 sources)
+
+## 2026-06-24 — Batch 04: Semiconductors, Electronics, Packaging & Advanced Manufacturing
+
+Prompt file used: prompts/01_source_corpus_300/04_batch_semiconductors_electronics_45.md
+Claude mode used: Research (advanced); normal chat for ledger merge + this log update
+Project files used: 00_admin/claude_project_instructions.md (governing), 01_sources/source_whitelist.md, source_quality_policy.md, source_300_requirement.md, source_evidence_ledger.csv, source_corpus_batch_tracker.csv, research_log.md
+Key outputs:
+  - 46 net-new qualifying sources logged (SC-001..SC-049; gap IDs SC-011/SC-018/SC-032 dropped in synthesis, no rows) + 3 company-claim rows (SC-C1 ASML, SC-C2 Wolfspeed, SC-C3 Navitas) logged as count_toward_300=no
+  - Batch quality gate: MISS — Tier1+2 = 34/46 = 73.9% (below 75% gate); Tier 3 = 12/46 = 26.1% (above 25% ceiling)
+  - CORRECTION: earlier in-session summary overstated this batch as 49 logged / 33 Tier 1 / 75.5% PASS; verified-on-merge figures are 46 logged / 30 Tier 1 / 4 Tier 2 / 12 Tier 3 / 73.9% (miss). Tracker and ledger reflect the corrected numbers.
+  - Coverage: advanced packaging & hybrid bonding (ECTC/imec/ASME/SPIE), chiplets/UCIe, WBG power + JEDEC JC-70 reliability (GaN/SiC), near-junction & microchannel thermal, silicon photonics (imec iSiPP/UMC), HBM4 + SPHBM4 memory standards, high-NA EUV & equipment market (SEMI/WSTS/SIA), OSAT/industry structure (CSET/ITIF/TrendForce), materials chokepoints (photoresist/specialty gases), backside power delivery & CFET device scaling, NAPMP packaging policy (net-new primaries)
+  - Cross-referenced, NOT re-logged: US-010/011/012/035/036/045 (CHIPS/NSTC/NAPMP), CN-010/011/012/013/046/047 (China semiconductors/OSAT)
+Files updated (to be applied locally by founder):
+  - source_evidence_ledger.csv — appended SC-001..SC-049 (46 counted) + SC-C1..SC-C3 (3 company, not counted); merged file now 199 data rows; 191 counted toward 300 (134 Tier 1, 33 Tier 2, 24 Tier 3)
+  - source_corpus_batch_tracker.csv — append corrected BATCH_04 row (status: complete_below_quality_gate; 46/30/4/12; running total 191/300)
+  - research_log.md — this entry
+New sources added: 46 counted (running corpus total: 191 toward 300; whole-corpus Tier1/2 = 167/191 = ~87%, still well above the 230/300 final requirement despite this batch's per-batch miss)
+New ideas added: 0 (gated)
+Ideas rejected: 0
+Open questions:
+  - Resolve Batch 04 gate miss now via Tier-1 top-up (~3 sources -> 49 counted, ~75.5% Tier1/2, ~24.5% Tier 3): retire low-confidence vendor rows SC-047 (photoresist) and SC-048 (specialty gases); add a SEMI/SIA materials-share primary, IEDM 2024/2025 IEEE Xplore primaries (TSMC N2 GAA / CFET; imec CFET+BSPDN), and an HVDC/800 VDC distribution standards primary?
+  - Or carry the marginal miss forward and clear it in the source dedupe/gap-fill audit (workflow step 3)?
+  - Verify paywalled abstracts before idea-gating: SC-004 (Nature Electronics UCIe 3D SiP), SC-017 (Nature Electronics 3000 W/cm2), SC-044 (ASME hybrid-bonding review); confirm SPHBM4 (SC-026) status on formal release
+  - Replace ASML/Wolfspeed/Navitas company-claim rows (SC-C1..C3) with independent technical corroboration where a top-ranked idea would otherwise lean on them
+Next action: Resolve Batch 04 quality-gate miss (top-up or defer to audit), then run prompts/01_source_corpus_300/05_batch_ai_robotics_automation_low_altitude_40.md (Batch 05, target 40 sources)
+
+
