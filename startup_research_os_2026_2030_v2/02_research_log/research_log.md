@@ -111,4 +111,27 @@ Open questions:
   - Replace ASML/Wolfspeed/Navitas company-claim rows (SC-C1..C3) with independent technical corroboration where a top-ranked idea would otherwise lean on them
 Next action: Resolve Batch 04 quality-gate miss (top-up or defer to audit), then run prompts/01_source_corpus_300/05_batch_ai_robotics_automation_low_altitude_40.md (Batch 05, target 40 sources)
 
+## 2026-06-24 — Batch 05: AI, Robotics, Industrial Automation & Low-Altitude Economy
 
+Prompt file used: prompts/01_source_corpus_300/05_batch_ai_robotics_automation_40.md; prompts/07_refresh_and_controls/02_session_export_package.md (export)
+Claude mode used: Research (advanced) for Batch 05; normal chat for ledger merge + export
+Project files used: 00_admin/claude_project_instructions.md (governing), 01_sources/source_whitelist.md, source_quality_policy.md, source_300_requirement.md, source_evidence_ledger.csv, source_corpus_batch_tracker.csv, research_log.md
+Key outputs:
+  - 46 net-new qualifying sources logged (AI-001..AI-046) + 1 company-claim row (AI-C1 EHang) logged count_toward_300=no
+  - Batch quality gate: PASS — Tier1+2 = 44/46 = 95.7% (>=75% gate); Tier 3 = 2/46 = 4.3% (under 25% ceiling)
+  - Per-row tier split 35 Tier 1 / 9 Tier 2 / 2 Tier 3; reconciles the in-session audit line (36 T1 / 8 T2) to the table-accurate 35/9 — Tier1+2 unchanged at 44, gate result unchanged
+  - Coverage: AI governance (NIST AI RMF + AIRC + AI 100-1; OECD AI Principles 2024 + incident framework); benchmarks (MLPerf Inference v5.0/v5.1, MLPerf Tiny v1.3 + 2021 origin, TinyML->TinyDL survey); robot safety standards (ISO 10218-1/-2:2025, ISO/TS 15066, ISO 13482, IEC/ISO TR 5469 + TS 22440 WG, NIST SSM study); robot learning/embodied AI (RT-2 VLA, GR00T N1, foundation-model + sim2real surveys, SSM path-replanning); industrial robots (IFR World Robotics 2025 global + China + density); AI trends (Stanford HAI 2025 + 2026); China LAE + robotics policy (State Council/CMC UAV Interim Regs primary + MOJ Q&A; CAAC airspace classification + flight-service plan; NDRC LAE division; MIIT humanoid guidance via Jamestown/MERICS/CGTN); US BVLOS/UTM (FAA Part 108 NPRM; NASA UTM ConOps + flight tests); counter-UAS standardized evaluation
+  - Cross-referenced, NOT re-logged: China LAE as "new quality productive force" in 2024 Government Work Report (CN-batch); US "Unleashing American Drone Dominance" EO Jun 2025 (US-batch); Made in China 2025 robotics designation (CN-batch)
+Files updated (to be applied locally by founder):
+  - source_evidence_ledger.csv — append AI-001..AI-046 + AI-C1 (47 rows); merged file now 246 data rows; 237 counted toward 300 (169 Tier 1, 42 Tier 2, 26 Tier 3)
+  - source_corpus_batch_tracker.csv — append BATCH_05 row (status: complete; 46/35/9/2; running total 237/300)
+  - research_log.md — this entry
+New sources added: 46 counted (running corpus total: 237 toward 300; whole-corpus Tier1/2 = 211/237 = 89.0%)
+New ideas added: 0 (gated)
+Ideas rejected: 0
+Open questions:
+  - Upgrade AI-033 (CAAC airspace classification) from KWM secondary citation to canonical caac.gov.cn primary URL; fetch original MIIT Chinese-text humanoid-robot Guiding Opinions to replace reliance on Jamestown/MERICS/CGTN (AI-038/039/040); add standalone NIST/ASTM E54 robot test-method primaries
+  - Add MLPerf Automotive v0.5 (AVCC+MLCommons, Aug 2025) and MLPerf Training rows in a follow-on top-up
+  - Batch 04 gate miss (73.9% Tier1/2) still outstanding — resolve via Tier-1 top-up or clear in Step-3 dedupe/gap-fill audit
+  - Treat all Chinese LAE market-size figures (RMB 1.5T 2025 / 3.5T 2035) as CAAC/state forecasts, not realized demand
+Next action: Run prompts/01_source_corpus_300/06_batch_biomedical_medtech_35.md (Batch 06, target 35 sources) in a fresh chat
