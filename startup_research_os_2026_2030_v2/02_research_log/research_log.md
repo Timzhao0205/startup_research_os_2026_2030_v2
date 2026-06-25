@@ -234,3 +234,33 @@ Next action: 300-source gate PASSES (371 counted, Tier1/2 91.6%, Tier3 under cap
 
 **Next action:** The 300-source gate is **PASS**. Collection is complete — proceed to **Step-3** (`09_dedupe_and_gap_fill_audit.md`) in a fresh chat, then **strategy synthesis** (`10_300_source_strategy_synthesis.md`).
 
+
+### Research log entry (paste into `02_research_log/research_log.md`)
+
+```text
+## 2026-06-24 — Batch 09: Step-3 Dedupe & Gap-Fill Audit (+ gap-fill collection)
+
+Prompt file used: prompts/01_source_corpus_300/09_dedupe_and_gap_fill_audit.md; prompts/07_refresh_and_controls/02_session_export_package.md (export)
+Claude mode used: direct file audit (pandas on uploaded ledger/tracker) for dedupe; Research (advanced) for gap-fill collection
+Project files used: 00_admin/claude_project_instructions.md (governing), 01_sources/source_300_requirement.md, source_evidence_ledger.csv, source_corpus_batch_tracker.csv, research_log.md
+Key outputs:
+  - PHASE 1 dedupe: collapsed the 5 pre-existing cross-batch exact-URL dup pairs (CN-019/AI-039, CN-020/AI-040, CN-024/AI-037, US-016/AI-001, US-045/SC-014); full URL/DOI/title sweep found no other dups; post-collapse = 366 counted; gate PASS
+  - PHASE 2 gap-fill: +31 counted Tier-1/2 sources across SC (+11), EX (+12), CM (+8); CM-053 logged count=no (dup filing)
+  - SC batch lifted 73.3% -> 78.6% Tier1/2 (clears 75% per-batch gate); EX 100%; CM 95.9%
+  - FINAL CORPUS: 424 ledger rows; 397 counted (313 T1 / 54 T2 / 30 T3 / 0 T4 = 92.4% Tier1/2; Tier3 30 of 70); 27 not counted
+  - GATE PASS on all six criteria; Ready for strategy synthesis = YES
+Files updated:
+  - source_evidence_ledger.csv (5 demotions + 32 appended rows -> 424 rows / 397 counted)
+  - source_corpus_batch_tracker.csv (BATCH_04/07/08 revised; BATCH_04 status -> complete; BATCH_09 corpus row = 397)
+  - research_log.md (this entry)
+  - session_2026-06-24_batch09_dedupe_and_gapfill.md (this memo)
+New sources added: 31 counted (gap-fill); corpus 366 -> 397
+New ideas added: 0 (gated)
+Ideas rejected: 0
+Open questions:
+  - Backfill 38 legacy blank `limitations` fields (BM x28, CN x10)?
+  - CM-051: pull a specific gsaAdvantage line-item unit price next pass
+  - Legacy tracker-vs-ledger tier drift (~7 rows); ledger parse authoritative
+  - Verify-on-access: paywalled journal rows + IR/aggregator SEC route (CM-048) vs EDGAR
+Next action: Gate PASSES. Re-upload the two updated CSVs to Project Files, then run prompts/01_source_corpus_300/10_300_source_strategy_synthesis.md in a fresh chat.
+```
