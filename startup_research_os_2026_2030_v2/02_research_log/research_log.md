@@ -161,3 +161,34 @@ Open questions:
   - Treat all paywalled abstracts (BM-025 Science Robotics, BM-035 NEJM AI) as verified-on-access before idea-gating
 Next action: Run prompts/01_source_corpus_300/07_batch_extreme_advanced_manufacturing_35.md (Batch 07, target 35 sources) in a fresh chat; corpus is 286/300 — Batches 07–08 (target 35 each) should clear the 300 gate with margin before the Step-3 dedupe/synthesis.
 
+## 2026-06-24 — Batch 07: Extreme Environments / Aerospace-adjacent / Nuclear-Fusion-Geothermal-Hydrogen / Advanced Materials
+
+Prompt file used: prompts/01_source_corpus_300/07_batch_extreme_advanced_manufacturing_35.md; prompts/07_refresh_and_controls/02_session_export_package.md (export)
+Claude mode used: Research (advanced) for Batch 07; normal chat for ledger/tracker merge + export
+Project files used: 00_admin/claude_project_instructions.md (governing), 01_sources/source_whitelist.md, source_quality_policy.md, source_300_requirement.md, source_evidence_ledger.csv, source_corpus_batch_tracker.csv, research_log.md
+Key outputs:
+  - 44 net-new qualifying sources logged (EX-001..EX-044), all Tier 1 + 3 company-claim rows (EX-C1..EX-C3 patents) + 1 Tier-4 row (EX-T4-1 DRACO cancellation) logged count_toward_300=no
+  - Batch quality gate: PASS — Tier1+2 = 44/44 = 100% (>=75% gate); Tier3 = 0% (under 25% ceiling)
+  - New EX prefix introduced (no collision with CN/US/EN/SC/AI/BM); 9 duplicate/cross-ref/excluded clusters removed incl. 1 cross-ref to EN- batch (IRENA hydrogen-cost economics)
+  - Coverage densest in fusion materials/components, nuclear fuels & ATF, rad-hard + high-temp electronics, advanced materials (UHTC/RHEA), hydrogen embrittlement; thin in standalone extreme-pressure metrology, supercritical-CO2 materials, non-fusion high-magnetic-field facilities
+  - Whole-corpus counted total now 330 (255 Tier1 / 46 Tier2 / 29 Tier3 = 91.2% Tier1/2); 300-source floor, Tier1/2 floor, and Tier3 cap all clear on counted basis
+Files updated:
+  - source_evidence_ledger.csv (append EX-001..EX-044, EX-C1..EX-C3, EX-T4-1 — additive merge, 297 -> 345 rows)
+  - source_corpus_batch_tracker.csv (append BATCH_07 row; 6 -> 7 rows)
+  - research_log.md (this entry)
+New sources added: 44 counted (running corpus total 330 toward 300)
+New ideas added: 0 (gated)
+Ideas rejected: 0
+Open questions:
+  - Run Batch 08 (customer/market/procurement, target 35) before the Batch 09 dedupe/gap-fill audit, or run the audit now since the counted floor (330) is already cleared?
+  - Resolve in Batch 09: (a) Batch 04 quality-gate miss (73.9% Tier1/2); (b) collapse the 5 pre-existing cross-batch duplicate URLs (CN-019/AI-039, CN-020/AI-040, CN-024/AI-037, US-016/AI-001, US-045/SC-014) -> ~325 counted; (c) verify paywalled/abstract-only EX rows (EX-021 ACS, EX-022 Nature, EX-024 JECS); (d) confirm EX-044 Feb-2024 NIF yield is an estimate not a finalized measurement
+  - Gap-fill thin EX sub-topics: standalone extreme-pressure sensors/metrology, supercritical-CO2 cycle materials, non-fusion high-magnetic-field (e.g. NHMFL), SiC/GaN as a power-device class
+Next action: Run prompts/01_source_corpus_300/08_batch_customer_market_procurement_35.md (Batch 08, target 35) in a fresh chat; then prompts/01_source_corpus_300/09_dedupe_and_gap_fill_audit.md.
+```
+
+---
+
+## Open questions (session-level)
+1. **Sequencing:** proceed to Batch 08, or trigger the Batch 09 dedupe/gap-fill audit early given the counted floor is already met?
+2. **Carry-forward debt for Batch 09:** Batch 04 gate miss; 5 cross-batch duplicate URLs; paywalled EX rows to verify; the NIF Feb-2024 estimate caveat.
+3. **EX gap-fill targets:** the four thin sub-topics listed above (searches not run — `web_search` budget hit 18 calls).
