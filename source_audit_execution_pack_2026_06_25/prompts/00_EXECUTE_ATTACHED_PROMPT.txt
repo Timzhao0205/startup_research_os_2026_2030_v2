@@ -1,0 +1,1 @@
+Execute the attached prompt exactly. Use Research and Web Search. Use Project files when referenced. Do not merely summarize the prompt; perform the task. Do not proceed to deep dives unless the prompt explicitly says the deep-dive gate is cleared.
