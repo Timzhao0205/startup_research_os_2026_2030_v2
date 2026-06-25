@@ -135,3 +135,29 @@ Open questions:
   - Batch 04 gate miss (73.9% Tier1/2) still outstanding — resolve via Tier-1 top-up or clear in Step-3 dedupe/gap-fill audit
   - Treat all Chinese LAE market-size figures (RMB 1.5T 2025 / 3.5T 2035) as CAAC/state forecasts, not realized demand
 Next action: Run prompts/01_source_corpus_300/06_batch_biomedical_medtech_35.md (Batch 06, target 35 sources) in a fresh chat
+
+## 2026-06-24 — Batch 06: Biomedical, Medtech, Bio-instrumentation & Regulation
+
+Prompt file used: prompts/01_source_corpus_300/06_batch_biomedical_medtech_35.md; prompts/07_refresh_and_controls/02_session_export_package.md (export)
+Claude mode used: Research (advanced) for Batch 06; normal chat for ledger/tracker merge + export
+Project files used: 00_admin/claude_project_instructions.md (governing), 01_sources/source_whitelist.md, source_quality_policy.md, source_300_requirement.md, source_evidence_ledger.csv, source_corpus_batch_tracker.csv, research_log.md
+Key outputs:
+  - 49 net-new qualifying sources logged (BM-001..BM-049) + 2 company-claim rows (BM-C1 Dexcom, BM-C2 Us2.ai) logged count_toward_300=no
+  - Batch quality gate: PASS — Tier1+2 = 46/49 = 93.9% (>=75% gate); Tier 3 = 3/49 = 6.1% (under 25% ceiling); per-tier split 42 T1 / 4 T2 / 3 T3
+  - Coverage: FDA AI-device landscape (1,451 cumulative through end-2025, 76% radiology, ~96% 510(k)); FDA PCCP final (Dec 2024) + draft all-device PCCP (Aug 2024); IMDRF SaMD (N12/N41/N81) + GMLP (N88, Jan 2025); EU MDR/IVDR transition + EUDAMED; WHO IVD prequalification; China NMPA green channel (104 devices/12 batches in 2025, Apr 2025 rules) + MERICS state-support; expedited pathways (Breakthrough 12.3% authorization rate; De Novo ~0.89% of 510(k) volume); bio-instrumentation primaries (wearable electrochemical/microneedle/regenerable sweat sensors, CGM head-to-head); surgical robotics (IDEAL framework, Science Robotics autonomy, R-TAMIS review); POC diagnostics + NIH POCTRN/RADx; lab automation workforce (1.4x chem / 3.7x serology) + ADLM staffing; reimbursement (first AI CPT 92229, Viz LVO NTAP)
+  - Cross-referenced, NOT re-logged: none from CN-/US-/EN-/SC-/AI- batches; all 49 are net-new
+Files updated (to be applied locally by founder):
+  - source_evidence_ledger.csv — append BM-001..BM-049 + BM-C1/BM-C2; merged file now 297 data rows; 286 counted toward 300 (211 Tier 1, 46 Tier 2, 29 Tier 3)
+  - source_corpus_batch_tracker.csv — append BATCH_06 row (status: complete; 49/42/4/3; running total 286/300)
+  - research_log.md — this entry
+  - 01_sources/source_corpus_summaries/batch_06_biomedical_medtech_summary.md — new (optional; the corpus report)
+New sources added: 49 counted (running corpus total: 286 toward 300; whole-corpus Tier1/2 = 257/286 = 89.9%)
+New ideas added: 0 (gated)
+Ideas rejected: 0
+Open questions:
+  - Step-3 dedupe must resolve 5 pre-existing cross-batch duplicate URLs (CN-019/AI-039, CN-020/AI-040, CN-024/AI-037, US-016/AI-001, US-045/SC-014); collapsing nets 281 counted
+  - Batch 04 gate miss (73.9% Tier1/2) still outstanding — resolve via Tier-1 top-up or clear in Step-3 audit
+  - Top up Batch 06 thin spots with primaries: official NMPA/CMDE page (replace Tier 3 trackers BM-046/047); direct ISO/IEC standards citations (ISO 13485:2016, ISO 14971:2019, IEC 62304, ISO 10993 — currently synthesis-only); EMA/MDCG primary; CLSI + AAMI primaries (absent); fetch post-March-2026 FDA AI cumulative count from the FDA CSV (1,451 is the end-2025 figure)
+  - Treat all paywalled abstracts (BM-025 Science Robotics, BM-035 NEJM AI) as verified-on-access before idea-gating
+Next action: Run prompts/01_source_corpus_300/07_batch_extreme_advanced_manufacturing_35.md (Batch 07, target 35 sources) in a fresh chat; corpus is 286/300 — Batches 07–08 (target 35 each) should clear the 300 gate with margin before the Step-3 dedupe/synthesis.
+
