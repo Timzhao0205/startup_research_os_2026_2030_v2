@@ -192,3 +192,45 @@ Next action: Run prompts/01_source_corpus_300/08_batch_customer_market_procureme
 1. **Sequencing:** proceed to Batch 08, or trigger the Batch 09 dedupe/gap-fill audit early given the counted floor is already met?
 2. **Carry-forward debt for Batch 09:** Batch 04 gate miss; 5 cross-batch duplicate URLs; paywalled EX rows to verify; the NIF Feb-2024 estimate caveat.
 3. **EX gap-fill targets:** the four thin sub-topics listed above (searches not run — `web_search` budget hit 18 calls).
+
+
+## 8. Research log entry (ready to paste into `02_research_log/research_log.md`)
+
+```text
+## 2026-06-24 — Batch 08: Customer Pain / Procurement / Market Structure / Competitor / Public Filings
+
+Prompt file used: prompts/01_source_corpus_300/08_batch_customer_market_procurement_35.md; prompts/07_refresh_and_controls/02_session_export_package.md (export)
+Claude mode used: Research (advanced) for Batch 08; normal chat for ledger/tracker merge, cross-batch dedupe, and export
+Project files used: 00_admin/claude_project_instructions.md (governing), 01_sources/source_whitelist.md, source_quality_policy.md, source_300_requirement.md, source_evidence_ledger.csv, source_corpus_batch_tracker.csv, research_log.md
+Key outputs:
+  - 41 counted qualifying sources logged (CM-prefix; new prefix, no collision) + 3 cross-reference rows (count=no) + 3 company-claim rows (count=no)
+  - Batch quality gate: PASS — Tier1+2 = 39/41 = 95.1% (>=75% gate); Tier3 = 2/41 = 4.9% (under 25% ceiling)
+  - Customer-concentration facts from SEC filings (Bloom 43%/13%/12% rising YoY; Methode 41%/10.9%; Willdan 27.4% + $1.0B backlog); procurement-vehicle map (DIU CSO/OT, FAR 6.302 sole-source, OSP-4 IDIQ Firefly $21.81M, HII OT->FAR $19M/$347M, DOE fusion milestone OTs); market-structure chokepoints (Besi 40%/74%; China SME 9.6% domestic demand 2023; US 50.4% share / China 24% demand)
+  - Cross-batch dedupe caught 3 re-surfaced URLs already in corpus: CM-016=US-044, CM-017=EN-016, CM-027=AI-016 -> converted to count=no cross-references
+Files updated (to be applied locally by founder):
+  - source_evidence_ledger.csv — append CM-001..CM-044 + CM-C1..CM-C3 (3 of the CM rows are count=no cross-references); merged file now 392 data rows; 371 counted toward 300 (286 Tier1 / 54 Tier2 / 31 Tier3)
+  - source_corpus_batch_tracker.csv — append BATCH_08 row (status complete; 41 counted; running total 371/300)
+  - research_log.md — this entry
+New sources added: 41 counted (running corpus total: 371 toward 300; whole-corpus Tier1/2 = 340/371 = 91.6%; Tier3 31 of 70 cap)
+New ideas added: 0 (gated)
+Ideas rejected: 0
+Open questions:
+  - Step-3 dedupe must still collapse 5 pre-existing cross-batch duplicate pairs (CN-019/AI-039, CN-020/AI-040, CN-024/AI-037, US-016/AI-001, US-045/SC-014); collapsing nets corpus to ~366 counted
+  - Batch 04 quality-gate miss (73.9% Tier1/2, Tier3 over 25%) still outstanding from earlier — resolve via Tier-1 top-up or clear in Step-3 audit
+  - Thin Batch 08 sub-topics for Step-3 gap-fill: explicit willingness-to-pay / price-point evidence (currently inferred from award $ values); documented vendor-dissatisfaction / switching signals (currently inferred from second-source/qualification language); a US biomedical-instrumentation 10-K with extracted customer/distributor concentration %; China customs/MOFCOM primary import-dependency line items (used Rhodium/USCC secondary instead)
+  - Verify before idea-gating: SEC figures pulled via StockTitan/TradingView routes against EDGAR primaries; CSET OSAT shares (CM-035) are 2019-vintage — refresh against current TrendForce; SEMI $117.1B is a full-year ACTUAL, not the SEMI forecast figures
+Next action: 300-source gate PASSES (371 counted, Tier1/2 91.6%, Tier3 under cap). Corpus collection complete — run prompts/01_source_corpus_300/09_dedupe_and_gap_fill_audit.md (Step-3) in a fresh chat to collapse the 5 cross-batch dupe pairs, resolve the Batch 04 gate miss, and gap-fill the four thin sub-topics, then proceed to 10_300_source_strategy_synthesis.md.
+```
+
+---
+
+## Open questions & next action (summary)
+
+**Open questions**
+1. Collapse the 5 pre-existing cross-batch duplicate pairs in Step-3 (nets corpus to ~366 counted).
+2. Resolve the outstanding Batch 04 quality-gate miss (Tier-1 top-up or clear in Step-3).
+3. Gap-fill the four thin Batch 08 sub-topics (willingness-to-pay; vendor-switching; US medtech concentration %; China customs primaries).
+4. Verify aggregator-sourced SEC figures against EDGAR; refresh the 2019-vintage CSET OSAT shares; keep SEMI actuals vs forecasts distinct.
+
+**Next action:** The 300-source gate is **PASS**. Collection is complete — proceed to **Step-3** (`09_dedupe_and_gap_fill_audit.md`) in a fresh chat, then **strategy synthesis** (`10_300_source_strategy_synthesis.md`).
+
