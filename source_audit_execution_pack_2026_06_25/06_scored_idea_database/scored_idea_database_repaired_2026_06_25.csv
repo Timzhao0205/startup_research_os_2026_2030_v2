@@ -1,50 +1,50 @@
 rank,idea_id,idea_name,old_score,new_score,score_delta,old_decision,new_decision,evidence_status,top25_eligible,repair_notes,source_issue_ids
--,RID-001,800VDC busway,81,81,0,P,P,CLEARED_WITH_WEAKNESS,yes,OCP re-tiered Tier2; pain holds; impact small,ISSUE-001;ISSUE-006
--,RID-002,Capacitorless DC buffer+supercap,86,86,0,P,P,CLEARED_WITH_WEAKNESS,yes,arXiv preprint+NVIDIA company-claim; pain corroborated; impact small,ISSUE-001;ISSUE-002
--,RID-003,Solid-state DC breaker+e-fuse,84,84,0,P,P,CLEARED_WITH_WEAKNESS,yes,OCP Tier2; impact small,ISSUE-001
--,RID-005,Rack-level DC-DC module,61,61,0,W,W,CLEARED_WITH_WEAKNESS,yes,OCP Diablo spec; impact small,ISSUE-001
--,RID-008,Blind-mate liquid+power connector,82,82,0,P,P,CLEARED_WITH_WEAKNESS,yes,Deschutes/Diablo spec Tier2; impact small,ISSUE-001;ISSUE-006
--,RID-009,GPU-aware power-orchestration SW,78,78,0,P,P,CLEARED_WITH_WEAKNESS,yes,arXiv preprint+NVIDIA claim; impact small,ISSUE-002
--,RID-024,GFM protection relay,81,81,0,P,P,CLEARED_WITH_WEAKNESS,yes,oscillation pain corroborated (NERC); impact small,ISSUE-002
--,RID-029,Grid-edge power-quality conditioner,77,77,0,P,P,CLEARED_WITH_WEAKNESS,yes,impact small,ISSUE-002
--,RID-030,Distribution-grade STATCOM (SiC),80,80,0,P,P,CLEARED_WITH_WEAKNESS,yes,SiC tariff = watch not kill; impact small,ISSUE-002;ISSUE-012
--,RID-033,CDU for 45C loops,77,77,0,P,P,CLEARED_WITH_WEAKNESS,yes,Deschutes specs verified Tier2; impact small,ISSUE-001;ISSUE-006
--,RID-034,Microfluidic cold plate >1kW/cm2,76,76,0,P,P,CLEARED_WITH_WEAKNESS,yes,80PSI spec enables cold plates; impact none,ISSUE-006
--,RID-115,Wide-bandwidth DC current sensor,54,54,0,W,W,CLEARED_WITH_WEAKNESS,yes,OCP DC-power spec; impact small,ISSUE-001
--,RID-053,Humanoid rotary actuator,79,79,0,P,P,CLEARED,yes,McKinsey 40-60% confirmed; 56% deleted; impact none,ISSUE-003
--,RID-102,Fusion-magnet HTS components,70,70,0,P,P,CLEARED_WITH_WEAKNESS,yes,$8M DOE-validated; 'largest'=company; impact small,ISSUE-007
--,RID-104,Fusion first-wall thermal mgmt,62,62,0,W,W,CLEARED_WITH_WEAKNESS,yes,CFS milestone context; impact small,ISSUE-007
--,RID-077,Surgical force-feedback system,62,62,0,W,W,CLEARED_WITH_WEAKNESS,yes,43% preclinical/company-supported; impact small down,ISSUE-005;ISSUE-008
--,RID-081,FDA AI-enabled surgical subsystem,58,58,0,W,W,CLEARED_WITH_WEAKNESS,yes,preclinical evidence; impact small down,ISSUE-005;ISSUE-008
--,RID-088,Robotic catheter actuation,56,56,0,W,W,CLEARED_WITH_WEAKNESS,yes,preclinical force-feedback; impact small down,ISSUE-005;ISSUE-008
--,RID-051,Advanced-packaging warpage controller,60,60,0,W,W,CLEARED_WITH_WEAKNESS,yes,HBM4 microbump 16-high raises warpage relevance; impact small,ISSUE-009
--,RID-041,Advanced-packaging metrology platform,51,51,0,K,K,KILL,no,HBM4 microbump postpones adv-packaging metrology pull,ISSUE-009
--,RID-042,Die-to-wafer hybrid bonder,47,47,0,K,K,KILL,no,720->775um postpones hybrid bonding past 2029 window,ISSUE-009
--,RID-045,Panel-level packaging handler,49,49,0,K,K,KILL,no,advanced-packaging pull postponed,ISSUE-009
--,RID-036,Chiplet thermal characterization,62,62,0,K,K,KILL,no,No executed NRL award; SAM.gov NOI only,ISSUE-013
--,RID-067,Detect-and-avoid module,71,71,0,P,P,HOLD,no,Part 108 not final; regulatory-speculation,ISSUE-010
--,RID-068,eVTOL powertrain,64,64,0,W,W,HOLD,no,Part 108 not final,ISSUE-010
--,RID-069,eVTOL thermal management,64,64,0,W,W,HOLD,no,Part 108 not final,ISSUE-010
--,RID-070,C2 datalink module+RID/EC,68,68,0,W,W,HOLD,no,Part 108 not final,ISSUE-010
--,RID-071,Drone airspace-management ADSP,52,52,0,K,K,HOLD,no,Part 108 not final; kill stands,ISSUE-010
--,RID-072,Heavy-lift cargo drone airframe,53,53,0,W,W,HOLD,no,Part 108 not final,ISSUE-010
--,RID-074,Drone battery fast-swap system,63,63,0,W,W,HOLD,no,Part 108 not final,ISSUE-010
--,RID-112,Navigation-grade MEMS IMU,69,69,0,W,W,HOLD,no,Held at regulatory-speculation; broad-market potential to revisit independently of Part 108,ISSUE-010
--,RID-087,Point-of-care molecular cartridge,47,47,0,K,K,NEEDS_MORE_SOURCE,no,Policy-context-only (China Document 551); no buyer pain,ISSUE-015
--,RID-091,China-localized imaging detector,46,46,0,K,K,NEEDS_MORE_SOURCE,no,Policy-context-only; geography=China; no buyer pain,ISSUE-015
--,RID-111,High-bandwidth piezo actuator,72,72,0,P,P,CLEARED,yes,07c: PH-001 nanopositioning nm/kHz tradeoff + hybrid-bonding 0.2um placement; cleared,ISSUE-014-111
--,RID-016,Second-life battery repurposing,71,71,0,P,P,CLEARED,yes,07c: PH-002 MIIT echelon-utilization + UL 1974 + NREL; cleared,ISSUE-014-016
--,RID-100,Automated optical-assembly cell,70,70,0,P,P,CLEARED,yes,07c: PH-003 peer-reviewed active-alignment packaging bottleneck; cleared,ISSUE-014-100
--,RID-015,Thermal-storage module (700C),68,68,0,W,W,CLEARED,yes,07c: PH-004 Sandia/DOE G3P3 >700C 6h storage; cleared,ISSUE-014-015
--,RID-026,Hybrid-plant controller,68,68,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-005 NREL UNIFI + FERC Order 2023; cleared-with-weakness (borders software/consulting; verify HW at 02e),ISSUE-014-026
--,RID-020,Battery thermal-runaway suppression,67,67,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-006 UL 9540A + NFPA 855 2026 TRPP; cleared-with-weakness (commoditized/test-driven),ISSUE-014-020
--,RID-040,Datacenter waste-heat recovery,67,67,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-007 EU EED + German EnEfG final law; cleared-with-weakness (EU/Germany geography limit),ISSUE-014-040
--,RID-017,Sodium-ion grid module,65,65,0,W,W,CLEARED,yes,07c: PH-008 GB/T 44265-2024 + PNNL/DOE; cleared,ISSUE-014-017
--,RID-032,EV-fleet bidirectional charger,63,63,0,W,W,CLEARED,yes,07c: PH-009 ISO 15118-20 + EVS38 V2G demo; cleared,ISSUE-014-032
--,RID-012,Behind-the-meter firm-power interface,63,63,0,W,W,CLEARED,yes,07c: PH-010 IEA 2026/2025 onsite-power + LBNL queue scarcity; cleared,ISSUE-014-012
--,RID-022,Microgrid DC-coupling hub,61,61,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-011 IEEE 2030.10 + DOE OE; cleared-with-weakness (diffuse/narrow scope),ISSUE-014-022
--,RID-097,Laser micro-machining cell,56,56,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-012 peer-reviewed TGV laser micromachining; cleared-with-weakness (generic application),ISSUE-014-097
--,RID-082,Implantable neurostimulator power,55,55,0,W,W,CLEARED,yes,07c: PH-013 neural-implant power/longevity review; cleared,ISSUE-014-082
--,RID-101,Molten-salt-resistant alloy,55,55,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-014 JOM/ORNL molten-salt corrosion; cleared-with-weakness (timeline likely past 2030),ISSUE-014-101
--,RID-094,AM in-situ NDE,50,50,0,K,K,HOLD,no,"07c: NIST AM-Bench Tier1 exists but prior-kill + monitoring-overproduction; HOLD, no standalone procurement/standards driver",ISSUE-014-094
--,RID-099,Extreme-precision metrology instrument,49,49,0,W,W,CLEARED_WITH_WEAKNESS,yes,"07c: PH-015 Nature Electronics + NIST overlay (sub-1nm); cleared-with-weakness (monitoring-adjacent, re-test at 02e)",ISSUE-014-099
+-,RID-001,800VDC busway,81,80,-1,P,P,CLEARED_WITH_WEAKNESS,yes,OCP re-tiered Tier2; pain holds; impact small | 02e: OCP Diablo spec Tier1->Tier2; UL857>600V codification lag. PW-1.,ISSUE-001;ISSUE-006
+-,RID-002,Capacitorless DC buffer+supercap,86,84,-2,P,P,CLEARED_WITH_WEAKNESS,yes,arXiv preprint+NVIDIA company-claim; pain corroborated; impact small | 02e: NVIDIA -30% relabeled company-supported (pain still corroborated by Tier-1 preprints Choukse/Ko-Zhu); OCP Diablo/Deschutes Tier1->Tier2. PW-2.,ISSUE-001;ISSUE-002
+-,RID-003,Solid-state DC breaker+e-fuse,84,83,-1,P,P,CLEARED_WITH_WEAKNESS,yes,OCP Tier2; impact small | 02e: OCP Diablo white-space Tier1->Tier2. PW-1.,ISSUE-001
+-,RID-005,Rack-level DC-DC module,61,60,-1,W,W,CLEARED_WITH_WEAKNESS,yes,OCP Diablo spec; impact small | 02e: OCP-adjacent Tier1->Tier2; commoditized. PW-1.,ISSUE-001
+-,RID-008,Blind-mate liquid+power connector,82,81,-1,P,P,CLEARED_WITH_WEAKNESS,yes,Deschutes/Diablo spec Tier2; impact small | 02e: OCP blind-mate requirement Tier1->Tier2. PW-1.,ISSUE-001;ISSUE-006
+-,RID-009,GPU-aware power-orchestration SW,78,77,-1,P,P,CLEARED_WITH_WEAKNESS,yes,arXiv preprint+NVIDIA claim; impact small | 02e: NVIDIA -30% company-supported; preprint-corroborated pain. PW-1.,ISSUE-002
+-,RID-024,GFM protection relay,81,81,0,P,P,CLEARED_WITH_WEAKNESS,yes,"oscillation pain corroborated (NERC); impact small | 02e: SCORE-003 (IEEE 2800.2-2026, Tier1) confirmed; evidence not decreased -> no reduction.",ISSUE-002
+-,RID-029,Grid-edge power-quality conditioner,77,76,-1,P,P,CLEARED_WITH_WEAKNESS,yes,impact small | 02e: NVIDIA company-supported; IEEE-2800.2 (Tier1) backstop intact. PW-1.,ISSUE-002
+-,RID-030,Distribution-grade STATCOM (SiC),80,79,-1,P,P,CLEARED_WITH_WEAKNESS,yes,SiC tariff = watch not kill; impact small | 02e: NVIDIA company-supported; IEEE-2800.2 (Tier1) backstop intact. PW-1.,ISSUE-002;ISSUE-012
+-,RID-033,CDU for 45C loops,77,76,-1,P,P,CLEARED_WITH_WEAKNESS,yes,Deschutes specs verified Tier2; impact small | 02e: OCP Deschutes spec Tier1->Tier2; SCORE-007 thermal intact. PW-1.,ISSUE-001;ISSUE-006
+-,RID-034,Microfluidic cold plate >1kW/cm2,76,76,0,P,P,CLEARED_WITH_WEAKNESS,yes,80PSI spec enables cold plates; impact none | 02e: SCORE-007 thermal evidence intact (not a re-tiering target) -> no reduction.,ISSUE-006
+-,RID-115,Wide-bandwidth DC current sensor,54,53,-1,W,W,CLEARED_WITH_WEAKNESS,yes,"OCP DC-power spec; impact small | 02e: OCP Tier1->Tier2. Diagnostic-adjacent (functional current-sense component, not standalone instrument) -> FLAG for 02f. PW-1.",ISSUE-001
+-,RID-053,Humanoid rotary actuator,79,79,0,P,P,CLEARED,yes,"McKinsey 40-60% confirmed; 56% deleted; impact none | 02e: Morgan Stanley '56%' misattribution removed (was China-share of MS Humanoid-100, not BOM); actuation=40-60% BOM holds on McKinsey (Tier2)+BofA. No penalty.",ISSUE-003
+-,RID-102,Fusion-magnet HTS components,70,69,-1,P,P,CLEARED_WITH_WEAKNESS,yes,$8M DOE-validated; 'largest'=company; impact small | 02e: DOE $8M milestone intact (Tier1/2); 'largest in program' relabeled company-supported (immaterial). Tiny customer set. NW-1.,ISSUE-007
+-,RID-104,Fusion first-wall thermal mgmt,62,62,0,W,W,CLEARED_WITH_WEAKNESS,yes,CFS milestone context; impact small | 02e: CFS DOE-milestone evidence intact; 'largest' not load-bearing here; pre-commercial market already priced -> no reduction.,ISSUE-007
+-,RID-077,Surgical force-feedback system,62,60,-2,W,W,HOLD,no,"43% preclinical/company-supported; impact small down | 02e: JUDGMENT CALL #1: standalone console competing directly with Intuitive; displacement thesis is an implicit clinical-outcome claim that evidence cannot support (Awad preclinical + Intuitive-funded; NCT07247175 measures surrogate endpoints, not patient outcomes). Addendum evidence-rule -> HOLD pending independent patient-outcome RCT. PW-2. (Reversible; override to defer-to-02f if preferred.)",ISSUE-005;ISSUE-008
+-,RID-081,FDA AI-enabled surgical subsystem,58,57,-1,W,W,CLEARED_WITH_WEAKNESS,yes,"preclinical evidence; impact small down | 02e: JUDGMENT CALL #1: clinical-outcome benefit preclinical/company-funded, BUT subsystem play with ISO-10218 (SCORE-009) functional-safety backstop. Kept CLEARED_WITH_WEAKNESS; clinical-outcome gate deferred to 02f. PW-1.",ISSUE-005;ISSUE-008
+-,RID-088,Robotic catheter actuation,56,55,-1,W,W,CLEARED_WITH_WEAKNESS,yes,preclinical force-feedback; impact small down | 02e: JUDGMENT CALL #1: robotic-catheter subsystem; preclinical/company-funded benefit. Kept CLEARED_WITH_WEAKNESS (component play); FLAG for 02f. PW-1.,ISSUE-005;ISSUE-008
+-,RID-051,Advanced-packaging warpage controller,60,58,-2,W,W,CLEARED_WITH_WEAKNESS,yes,"HBM4 microbump 16-high raises warpage relevance; impact small | 02e: Borderline admit: thin evidence (SCORE-016), borders on in-line metrology; no direct purchased-capability spec confirmable in re-score (no new search in 02e). Downgraded; flagged WEAKEST ADMIT for 02f confirm-or-kill. PW-2.",ISSUE-009
+-,RID-041,Advanced-packaging metrology platform,51,51,0,K,K,KILL,no,HBM4 microbump postpones adv-packaging metrology pull | 02e: Diagnostic + cleanroom + giants; HBM4 microbump continuation strengthens only the diagnostic role (penalized on standalone value). Kill stands.,ISSUE-009
+-,RID-042,Die-to-wafer hybrid bonder,47,47,0,K,K,KILL,no,"720->775um postpones hybrid bonding past 2029 window | 02e: Kill LOCKED on Tier-1 JEDEC JESD270-4 (775um, 16-Hi keeps microbumps) replacing Tier-4 36Kr; hybrid bonding postponed >2029 (TRIG-007: no near-term pull). Per addendum kill discipline.",ISSUE-009
+-,RID-045,Panel-level packaging handler,49,49,0,K,K,KILL,no,advanced-packaging pull postponed | 02e: Cleanroom + capex; no audit finding revives. Kill stands.,ISSUE-009
+-,RID-036,Chiplet thermal characterization,62,62,0,K,K,KILL,no,"No executed NRL award; SAM.gov NOI only | 02e: NRL award not verifiable (NOI N00173-25-RFI-MF18 + DARPA prime only; TRIG-005 speculative/medium). Per addendum, kill stands unless executed contract appears in USAspending/FPDS/SAM.gov.",ISSUE-013
+-,RID-067,Detect-and-avoid module,71,68,-3,P,W,HOLD,no,"Part 108 not final; regulatory-speculation | 02e: Core thesis gated by FAA Part 108 BVLOS (NPRM only; not final; TRIG-001 speculative). Decision P->W; HOLD pending final FR rule. PW-1,RX-2.",ISSUE-010
+-,RID-068,eVTOL powertrain,64,62,-2,W,W,HOLD,no,Part 108 not final | 02e: eVTOL/AAM type-cert gated; regulatory trigger speculative. RX-2.,ISSUE-010
+-,RID-069,eVTOL thermal management,64,62,-2,W,W,HOLD,no,Part 108 not final | 02e: eVTOL/AAM type-cert gated; regulatory trigger speculative. RX-2.,ISSUE-010
+-,RID-070,C2 datalink module+RID/EC,68,65,-3,W,W,HOLD,no,"Part 108 not final | 02e: Remote-ID/C2 demand gated by Part 108 (speculative). PW-1,RX-2.",ISSUE-010
+-,RID-071,Drone airspace-management ADSP,52,52,0,K,K,KILL,no,Part 108 not final; kill stands | 02e: Software/services + Part 146/108 gated; permanent kill reason independent of trigger. Status aligned HOLD->KILL (decision already K).,ISSUE-010
+-,RID-072,Heavy-lift cargo drone airframe,53,51,-2,W,W,HOLD,no,Part 108 not final | 02e: Part 108 + capex + China; trigger speculative. RX-2.,ISSUE-010
+-,RID-074,Drone battery fast-swap system,63,61,-2,W,W,HOLD,no,Part 108 not final | 02e: Part 108 timing + OEM lock; trigger speculative. RX-2.,ISSUE-010
+-,RID-112,Navigation-grade MEMS IMU,69,67,-2,W,W,HOLD,no,Held at regulatory-speculation; broad-market potential to revisit independently of Part 108 | 02e: GPS-denied IMU demand gated by Part 108 (speculative). RX-2.,ISSUE-010
+-,RID-087,Point-of-care molecular cartridge,47,46,-1,K,K,NEEDS_MORE_SOURCE,no,Policy-context-only (China Document 551); no buyer pain | 02e: Customer pain remains policy-context-only (Doc 551 localization; no direct workflow-pain/buyer source); also diagnostic. PW-1; stays blocked.,ISSUE-015
+-,RID-091,China-localized imaging detector,46,45,-1,K,K,NEEDS_MORE_SOURCE,no,Policy-context-only; geography=China; no buyer pain | 02e: Customer pain policy-context-only (Doc 551); cleanroom-high + China-only + export-incoherent. PW-1; stays blocked.,ISSUE-015
+-,RID-111,High-bandwidth piezo actuator,72,72,0,P,P,CLEARED,yes,07c: PH-001 nanopositioning nm/kHz tradeoff + hybrid-bonding 0.2um placement; cleared | 02e: Placeholder CLEARED on Sci Rep 2022 + US Patent 12438117 (Tier1) -> no reduction.,ISSUE-014-111
+-,RID-016,Second-life battery repurposing,71,71,0,P,P,CLEARED,yes,07c: PH-002 MIIT echelon-utilization + UL 1974 + NREL; cleared | 02e: Placeholder CLEARED on MIIT echelon-utilization spec + UL1974 + NREL (Tier1/2) -> no reduction.,ISSUE-014-016
+-,RID-100,Automated optical-assembly cell,70,70,0,P,P,CLEARED,yes,07c: PH-003 peer-reviewed active-alignment packaging bottleneck; cleared | 02e: Placeholder CLEARED on Photonics 12(8):821 2025 (peer-reviewed Tier1); arXiv only corroborates -> no reduction.,ISSUE-014-100
+-,RID-015,Thermal-storage module (700C),68,68,0,W,W,CLEARED,yes,07c: PH-004 Sandia/DOE G3P3 >700C 6h storage; cleared | 02e: Placeholder CLEARED on Sandia/DOE G3P3 (Tier1) -> no reduction.,ISSUE-014-015
+-,RID-026,Hybrid-plant controller,68,67,-1,W,W,CLEARED_WITH_WEAKNESS,yes,"07c: PH-005 NREL UNIFI + FERC Order 2023; cleared-with-weakness (borders software/consulting; verify HW at 02e) | 02e: NREL UNIFI/FERC 2023 clears existence, but confirm true HW/SW controller vs integration/consulting at deep-dive; residual consulting-border penalty. SV-1.",ISSUE-014-026
+-,RID-020,Battery thermal-runaway suppression,67,67,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-006 UL 9540A + NFPA 855 2026 TRPP; cleared-with-weakness (commoditized/test-driven) | 02e: Placeholder CLEARED on UL9540A + NFPA 855:2026 (Tier1) -> no reduction.,ISSUE-014-020
+-,RID-040,Datacenter waste-heat recovery,67,66,-1,W,W,CLEARED_WITH_WEAKNESS,yes,"07c: PH-007 EU EED + German EnEfG final law; cleared-with-weakness (EU/Germany geography limit) | 02e: Driver EU/Germany-bounded (Dir 2023/1791 Art 26.6 + EnEfG, eff 1 Jul 2026); weak China-first wedge. Geography-flagged. CW-1.",ISSUE-014-040
+-,RID-017,Sodium-ion grid module,65,65,0,W,W,CLEARED,yes,07c: PH-008 GB/T 44265-2024 + PNNL/DOE; cleared | 02e: Placeholder CLEARED on GB/T 44265-2024 (Tier1) -> no reduction. China-incumbent competition already priced.,ISSUE-014-017
+-,RID-032,EV-fleet bidirectional charger,63,63,0,W,W,CLEARED,yes,07c: PH-009 ISO 15118-20 + EVS38 V2G demo; cleared | 02e: Placeholder CLEARED on ISO 15118-20:2022 (Tier1) -> no reduction.,ISSUE-014-032
+-,RID-012,Behind-the-meter firm-power interface,63,62,-1,W,W,CLEARED,yes,07c: PH-010 IEA 2026/2025 onsite-power + LBNL queue scarcity; cleared | 02e: IEA onsite gas/battery figures are 2030 projections; LBNL 'Queued Up' excludes behind-the-meter; borders on integration. Eligible; flagged. PW-1.,ISSUE-014-012
+-,RID-022,Microgrid DC-coupling hub,61,61,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-011 IEEE 2030.10 + DOE OE; cleared-with-weakness (diffuse/narrow scope) | 02e: Placeholder CLEARED on IEEE 2030.10-2021 + DOE OE (Tier1) -> no reduction.,ISSUE-014-022
+-,RID-097,Laser micro-machining cell,56,56,0,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-012 peer-reviewed TGV laser micromachining; cleared-with-weakness (generic application) | 02e: Placeholder CLEARED on JMPT 2025 (Tier1) -> no reduction. Commoditized job-shop risk already priced.,ISSUE-014-097
+-,RID-082,Implantable neurostimulator power,55,55,0,W,W,CLEARED,yes,07c: PH-013 neural-implant power/longevity review; cleared | 02e: Placeholder CLEARED on Front. Neurosci. 2023 (Tier1) -> no reduction. FDA burden already priced.,ISSUE-014-082
+-,RID-101,Molten-salt-resistant alloy,55,53,-2,W,W,CLEARED_WITH_WEAKNESS,yes,07c: PH-014 JOM/ORNL molten-salt corrosion; cleared-with-weakness (timeline likely past 2030) | 02e: Molten-salt customer deployment largely >2030; near-term (<=2030) first-customer demand discounted. Eligible-with-weakness; timing-flagged. TRL-2.,ISSUE-014-101
+-,RID-094,AM in-situ NDE,50,50,0,K,K,HOLD,no,"07c: NIST AM-Bench Tier1 exists but prior-kill + monitoring-overproduction; HOLD, no standalone procurement/standards driver | 02e: Diagnostic/NDE-overproduction; prior kill; no standalone procurement/standards driver. HOLD stands.",ISSUE-014-094
+-,RID-099,Extreme-precision metrology instrument,49,49,0,W,W,HOLD,no,"07c: PH-015 Nature Electronics + NIST overlay (sub-1nm); cleared-with-weakness (monitoring-adjacent, re-test at 02e) | 02e: Re-tested vs diagnostic/metrology-overproduction hard filter: standalone metrology instrument with no non-diagnostic function -> HOLD (consistent with RID-094). Revive only on a procurement/standard demanding it as a purchased capability.",ISSUE-014-099
